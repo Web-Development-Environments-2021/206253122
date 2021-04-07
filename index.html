@@ -2,7 +2,18 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://cdn.tiny.cloud/1/a2h6vnnt07is081l4wyk0h20ulg5mmuxjuzmq618q1ijplue/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>
+    tinymce.init({
+      selector: "#content",
+      plugins: "emoticons",
+      toolbar: "emoticons",
+      toolbar_location: "bottom",
+      menubar: false
+    });
+  </script>
   <div class="menu">
+    <img src="yng_and_yang.jpeg" alt="yng_and_yang" style="width:50px;height:50px; float: left;">
     <a href="#aboutme">About Me</a>
     <a href="#myPhotos">My Photos</a>
     <a href="#myplaylist">My Playlist</a>
@@ -94,10 +105,23 @@
       <li><u>Web 3.0</u>: Behavioural advertising</li>
     </ul>
   </ol>
-</section>
+  <h3><b><u> UseCases </u></b></h3>
+  <ol type="1">
+      <li><u>UseCase1</u>: Edit text: In web1 is not allowed, In web2 is allowed but not for keeping or sending it and in web3 we can do both.</li>
+      <li><u>UseCase2</u>: Search tomatos: In web1 we get companies that sell tomatos, In web2 we get people that says they like tomatos and in web3 we get websites that people built about things they like that contains or similar to tomatos, like pizza.</li>
+      <li><u>UserCase3</u>: After searching tomatos: In web1 we are not going to get advertisements, In web2 we get advertisements in social media only and in web3 we get advertisements about things we like' again like pizza</li>
+  </ol>
+  </section>
 
-<section id="contactme" class="contact">
+<section align="center" id="contactme" class="contact">
 <a name=#contactme><h2 align="center">------------------------------------------------------------------------Contact-------------------------------------------------------------------------</h2></a>
+<form method="POST" action="mailto:dolevdr@post.bgu.ac.il?subject=" enctype="text/plain" style="width: 50%; padding-left: 25%;">
+  <label for="Subject">name:</label><br>
+  <input class="sub" type="text" id="subject" name="name"><br>
+  <label for="content">Content:</label><br>
+  <textarea class="textemail" type="text" id="content" name="content"></textarea><br><br>
+  <input type="submit" value="Submit">
+</form>
 </section>
 
 <script type="text/javascript">
